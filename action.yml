@@ -1,12 +1,12 @@
 name: Generate build version
-description: ''
+description: 'Generate build version'
 inputs:
   sha:
-    description: ''
+    description: 'The SHA to include'
     required: false
 outputs:
   version:
-    description: ''
+    description: 'The generated build version (JSON)'
     value: ${{ steps.build-version.outputs.version }}
 runs:
   using: composite
